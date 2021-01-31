@@ -69,6 +69,10 @@ app.get('/listVideos', function (req, res) {
 
 })
 
+app.get('/home', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+})
+
 
 
 app.listen(port,()=>{
